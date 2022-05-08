@@ -1,16 +1,17 @@
 import React from 'react';
+import {MyButton} from "../../../common/MyButton/MyButton";
 
-export const PostItem = (props) => {
+export const PostItem = ({removePost, number, post}) => {
     return (
         <div className="post">
             <div className="post__container">
-                <strong>{props.number}. {props.post.title}</strong>
+                <strong>{number}. {post.title}</strong>
                 <div>
-                    {props.post.body}
+                    {post.body}
                 </div>
             </div>
             <div className="post__btns">
-                <button>delete</button>
+                <MyButton onClick={() => removePost(post.id)}>delete</MyButton>
             </div>
         </div>
     );
