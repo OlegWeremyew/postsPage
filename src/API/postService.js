@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export default class PostService {
+
     static async getAll(limit = 10, page = 1) {
         const response = await axios.get("https://jsonplaceholder.typicode.com/posts", {
             params: {
@@ -10,4 +11,15 @@ export default class PostService {
         })
         return response
     }
+
+    static async getByID(postID) {
+        const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${postID}`)
+        return response
+    }
+
+    static async getCommentsByPostID(postID) {
+        const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${postID}/comments`)
+        return response
+    }
+
 }

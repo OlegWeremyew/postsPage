@@ -20,7 +20,6 @@ export const PostList = ({posts, title, removePost}) => {
                         return (
                             <CSSTransition key={post.id} timeout={500} classNames="post">
                                 <PostItem
-                                    number={index + 1}
                                     post={post}
                                     removePost={removePost}
                                 />
