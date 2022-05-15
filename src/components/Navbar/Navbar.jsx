@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {NavLink} from "react-router-dom";
+import {AuthContext} from "../../context";
 
 export const Navbar = () => {
+
+
+    const {isAuth, setIsAuth} = useContext(AuthContext)
+
     return (
         <nav className='navbar'>
             <div className="navbar__links">
