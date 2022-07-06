@@ -21,6 +21,7 @@
     align-items: center;
     padding: 15px;
     border: 2px solid teal;
+    background-color: #fff;
     margin-top: 15px;
 }
 
@@ -73,4 +74,13 @@
 
 .post__btns {
     display: flex;
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
 }

@@ -5,7 +5,6 @@ import {Posts} from "../../pages/Posts/Posts";
 import {About} from "../../pages/About/About";
 import {PostListPage} from "../PostListPage/PostListPage,jsx";
 import {AuthContext} from "../../context";
-import {Login} from "../Login/Login";
 
 const AppRouter = () => {
 
